@@ -1,8 +1,21 @@
 import data from './meteorites.json' assert { type: 'json' };
 const output = document.getElementById("output");
+const bigMass = document.getElementById("bigMass");
 
 let html = "";
+let mostMass = 0
+let mostMassI = 0
 for (let i = 0; i < data.length; i++) {
+
+    let currentMass = parseInt(data[i].mass)
+
+    if (mostMass < currentMass) {
+        mostMass = currentMass
+        mostMassI = i
+    } else {
+
+    }
+
     // html += `<p>${data[i].name}: ${data[i].recclass}</p>`;
     html += `<div class="box">
     <div class="row">
@@ -20,4 +33,6 @@ for (let i = 0; i < data.length; i++) {
     </div>
 </div>`
 }
+bigMass.innerHTML = `<div>The meteorite with the biggest mass is ${data[mostMassI].name} with a mass of ${data[mostMassI].mass} tons, its ID is ${data[mostMassI].id} </div>`
+
 output.innerHTML = html;

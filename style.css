@@ -1,15 +1,18 @@
 .box{
-
+    border-radius: 5px;
     background-color: black;
     display: block;
     width: 50%;
     padding: 2px;
     margin: 10px;
     margin-left: 25%;
+    box-shadow: 5px 5px 2px  lightgray;
+    
 }
 
 .row{
-    background-color: aliceblue;
+    
+    background-color: white;
     margin: 2px;
     padding: 4px;
     text-align: center ;
