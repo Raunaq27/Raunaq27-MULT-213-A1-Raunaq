@@ -1,0 +1,21 @@
+.box{
+
+    background-color: black;
+    display: block;
+    width: 40%;
+    padding: 2px;
+}
+
+.row{
+    background-color: aliceblue;
+    margin: 2px;
+    padding: 4px;
+    text-align: center ;
+ 
+}
+.col {
+  
+    display: inline-block;
+    padding: 2px;
+    margin: 4px;
+}
